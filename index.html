@@ -4,15 +4,15 @@
 <title>Adrián Casco · Reparación de hardware</title>
 <meta name="description" content="Portfolio de reparaciones: móviles, consolas, portátiles, PCs y microsoldadura.">
 <meta property="og:title" content="Adrián Casco · Reparación de hardware">
-<meta property="og:image" content="img/consolas-104.webp">
+<meta property="og:image" content="./consolas-104.webp">
 <style>
-:root{--navy:#1B2A41;--coral:#F2563F;--bg:#E9E7E3;--cream:#FFF3EA;--ink:#22303f}
+:root{--navy:#1B2A41;--coral:#F2563F;--bg:#0E1420;--cream:#FFF3EA;--ink:#e6e9ee}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,"Segoe UI",Calibri,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
 a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-header.hero{background:var(--navy);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
+header.hero{background:#16213a;color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
 header.hero:after{content:"";position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;background:var(--coral);opacity:.9}
 .hero .wrap{position:relative;z-index:1}
 .tag{display:inline-block;background:var(--cream);color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px}
@@ -24,27 +24,27 @@ h1 em{font-style:normal;color:var(--coral)}
 .btn.ghost{background:transparent;color:#fff;border-color:#fff}
 .btn:hover{filter:brightness(1.08)}
 section{padding:56px 0}
-h2{font-size:30px;color:var(--navy);margin-bottom:6px;font-weight:800}
+h2{font-size:30px;color:#fff;margin-bottom:6px;font-weight:800}
 h2:after{content:"";display:block;width:54px;height:4px;background:var(--coral);margin-top:8px;border-radius:2px}
-.sub{color:#5b6673;margin:14px 0 26px;max-width:640px}
+.sub{color:#9aa6b4;margin:14px 0 26px;max-width:640px}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-.filters button{font:inherit;font-weight:600;border:2px solid var(--navy);background:transparent;color:var(--navy);padding:8px 16px;border-radius:99px;cursor:pointer}
-.filters button.on{background:var(--navy);color:#fff}
+.filters button{font:inherit;font-weight:600;border:2px solid #3a4a63;background:transparent;color:#dfe5ee;padding:8px 16px;border-radius:99px;cursor:pointer}
+.filters button.on{background:var(--coral);border-color:var(--coral);color:#fff}
 .grid{columns:3 280px;column-gap:16px}
-.card{break-inside:avoid;margin:0 0 16px;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(27,42,65,.12);cursor:zoom-in;position:relative}
+.card{break-inside:avoid;margin:0 0 16px;border-radius:12px;overflow:hidden;background:#1B2A41;box-shadow:0 2px 14px rgba(0,0,0,.5);cursor:zoom-in;position:relative}
 .card img{display:block;width:100%;height:auto;transition:transform .35s}
 .card:hover img{transform:scale(1.03)}
 .card figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;color:#fff;font-weight:600;font-size:14px;background:linear-gradient(transparent,rgba(27,42,65,.88))}
 .card.hide{display:none}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.svc{background:var(--cream);border-radius:14px;padding:22px;border-left:5px solid var(--coral)}
-.svc h3{color:var(--navy);margin-bottom:6px;font-size:18px}
-.svc p{font-size:15px;color:#46515e}
-.contact{background:var(--navy);color:#fff;text-align:center}
+.svc{background:#1B2A41;border-radius:14px;padding:22px;border-left:5px solid var(--coral)}
+.svc h3{color:#fff;margin-bottom:6px;font-size:18px}
+.svc p{font-size:15px;color:#b4bfcc}
+.contact{background:#16213a;color:#fff;text-align:center}
 .contact h2{color:#fff}.contact h2:after{margin:8px auto 0}
 .contact p{color:#d5dbe4;margin:14px auto 24px;max-width:520px}
 .contact .cta{justify-content:center}
-footer{padding:22px;text-align:center;font-size:13px;color:#6b7580}
+footer{padding:22px;text-align:center;font-size:13px;color:#7d8896}
 .lb{position:fixed;inset:0;background:rgba(15,22,34,.94);display:none;align-items:center;justify-content:center;z-index:50;flex-direction:column;padding:20px}
 .lb.on{display:flex}
 .lb img{max-width:100%;max-height:82vh;border-radius:8px}
@@ -63,25 +63,25 @@ footer{padding:22px;text-align:center;font-size:13px;color:#6b7580}
 <p class="sub">Una selección de reparaciones recientes. Toca una foto para verla en grande.</p>
 <div class="filters"><button data-f="todo" class=on>Todo</button><button data-f="moviles">Móviles</button><button data-f="consolas">Consolas</button><button data-f="portatiles">Portátiles</button><button data-f="pc">PCs y GPUs</button><button data-f="soldadura">Soldadura y placas</button></div>
 <div class="grid" id="grid">
-<figure class="card" data-c="moviles" data-i="0"><img loading="lazy" src="img/moviles-090-t.webp" width="640" height="479" alt="Xiaomi · placas y marcos"><figcaption>Xiaomi · placas y marcos</figcaption></figure>
-<figure class="card" data-c="moviles" data-i="1"><img loading="lazy" src="img/moviles-119-t.webp" width="640" height="480" alt="Pantalla rota · antes de abrir"><figcaption>Pantalla rota · antes de abrir</figcaption></figure>
-<figure class="card" data-c="moviles" data-i="2"><img loading="lazy" src="img/moviles-121-t.webp" width="640" height="480" alt="iPhone · cambio de batería"><figcaption>iPhone · cambio de batería</figcaption></figure>
-<figure class="card" data-c="moviles" data-i="3"><img loading="lazy" src="img/moviles-123-t.webp" width="640" height="470" alt="iPhone · despiece completo"><figcaption>iPhone · despiece completo</figcaption></figure>
-<figure class="card" data-c="consolas" data-i="4"><img loading="lazy" src="img/consolas-102-t.webp" width="640" height="479" alt="Switch · refrigeración abierta"><figcaption>Switch · refrigeración abierta</figcaption></figure>
-<figure class="card" data-c="consolas" data-i="5"><img loading="lazy" src="img/consolas-103-t.webp" width="640" height="479" alt="Switch · placa y batería"><figcaption>Switch · placa y batería</figcaption></figure>
-<figure class="card" data-c="consolas" data-i="6"><img loading="lazy" src="img/consolas-104-t.webp" width="640" height="445" alt="Switch · placa al descubierto"><figcaption>Switch · placa al descubierto</figcaption></figure>
-<figure class="card" data-c="consolas" data-i="7"><img loading="lazy" src="img/consolas-105-t.webp" width="640" height="421" alt="Switch · reensamblada"><figcaption>Switch · reensamblada</figcaption></figure>
-<figure class="card" data-c="consolas" data-i="8"><img loading="lazy" src="img/consolas-118-t.webp" width="640" height="480" alt="Switch · limpieza interna"><figcaption>Switch · limpieza interna</figcaption></figure>
-<figure class="card" data-c="portatiles" data-i="9"><img loading="lazy" src="img/portatiles-132-t.webp" width="640" height="432" alt="MacBook Air · batería y placa"><figcaption>MacBook Air · batería y placa</figcaption></figure>
-<figure class="card" data-c="portatiles" data-i="10"><img loading="lazy" src="img/portatiles-137-t.webp" width="640" height="482" alt="MacBook Air 13" · interior"><figcaption>MacBook Air 13" · interior</figcaption></figure>
-<figure class="card" data-c="portatiles" data-i="11"><img loading="lazy" src="img/portatiles-138-t.webp" width="640" height="482" alt="Portátil gaming · refrigeración"><figcaption>Portátil gaming · refrigeración</figcaption></figure>
-<figure class="card" data-c="portatiles" data-i="12"><img loading="lazy" src="img/portatiles-139-t.webp" width="640" height="482" alt="Portátil gaming · pasta y pads"><figcaption>Portátil gaming · pasta y pads</figcaption></figure>
-<figure class="card" data-c="pc" data-i="13"><img loading="lazy" src="img/pc-096-t.webp" width="544" height="640" alt="GPU · desmontaje completo"><figcaption>GPU · desmontaje completo</figcaption></figure>
-<figure class="card" data-c="pc" data-i="14"><img loading="lazy" src="img/pc-100-t.webp" width="640" height="479" alt="Montaje PC · refrigeración líquida"><figcaption>Montaje PC · refrigeración líquida</figcaption></figure>
-<figure class="card" data-c="soldadura" data-i="15"><img loading="lazy" src="img/soldadura-108-t.webp" width="640" height="442" alt="Soldadura · cable y jack"><figcaption>Soldadura · cable y jack</figcaption></figure>
-<figure class="card" data-c="soldadura" data-i="16"><img loading="lazy" src="img/soldadura-128-t.webp" width="640" height="431" alt="Placa de monitor · reparación"><figcaption>Placa de monitor · reparación</figcaption></figure>
-<figure class="card" data-c="soldadura" data-i="17"><img loading="lazy" src="img/soldadura-129-t.webp" width="640" height="480" alt="Montaje y soldadura de kit"><figcaption>Montaje y soldadura de kit</figcaption></figure>
-<figure class="card" data-c="soldadura" data-i="18"><img loading="lazy" src="img/soldadura-140-t.webp" width="482" height="640" alt="Reballing · GPU portátil"><figcaption>Reballing · GPU portátil</figcaption></figure>
+<figure class="card" data-c="moviles" data-i="0"><img loading="lazy" src="./moviles-090-t.webp" width="640" height="479" alt="Xiaomi · placas y marcos"><figcaption>Xiaomi · placas y marcos</figcaption></figure>
+<figure class="card" data-c="moviles" data-i="1"><img loading="lazy" src="./moviles-119-t.webp" width="640" height="480" alt="Pantalla rota · antes de abrir"><figcaption>Pantalla rota · antes de abrir</figcaption></figure>
+<figure class="card" data-c="moviles" data-i="2"><img loading="lazy" src="./moviles-121-t.webp" width="640" height="480" alt="iPhone · cambio de batería"><figcaption>iPhone · cambio de batería</figcaption></figure>
+<figure class="card" data-c="moviles" data-i="3"><img loading="lazy" src="./moviles-123-t.webp" width="640" height="470" alt="iPhone · despiece completo"><figcaption>iPhone · despiece completo</figcaption></figure>
+<figure class="card" data-c="consolas" data-i="4"><img loading="lazy" src="./consolas-102-t.webp" width="640" height="479" alt="Switch · refrigeración abierta"><figcaption>Switch · refrigeración abierta</figcaption></figure>
+<figure class="card" data-c="consolas" data-i="5"><img loading="lazy" src="./consolas-103-t.webp" width="640" height="479" alt="Switch · placa y batería"><figcaption>Switch · placa y batería</figcaption></figure>
+<figure class="card" data-c="consolas" data-i="6"><img loading="lazy" src="./consolas-104-t.webp" width="640" height="445" alt="Switch · placa al descubierto"><figcaption>Switch · placa al descubierto</figcaption></figure>
+<figure class="card" data-c="consolas" data-i="7"><img loading="lazy" src="./consolas-105-t.webp" width="640" height="421" alt="Switch · reensamblada"><figcaption>Switch · reensamblada</figcaption></figure>
+<figure class="card" data-c="consolas" data-i="8"><img loading="lazy" src="./consolas-118-t.webp" width="640" height="480" alt="Switch · limpieza interna"><figcaption>Switch · limpieza interna</figcaption></figure>
+<figure class="card" data-c="portatiles" data-i="9"><img loading="lazy" src="./portatiles-132-t.webp" width="640" height="432" alt="MacBook Air · batería y placa"><figcaption>MacBook Air · batería y placa</figcaption></figure>
+<figure class="card" data-c="portatiles" data-i="10"><img loading="lazy" src="./portatiles-137-t.webp" width="640" height="482" alt="MacBook Air 13" · interior"><figcaption>MacBook Air 13" · interior</figcaption></figure>
+<figure class="card" data-c="portatiles" data-i="11"><img loading="lazy" src="./portatiles-138-t.webp" width="640" height="482" alt="Portátil gaming · refrigeración"><figcaption>Portátil gaming · refrigeración</figcaption></figure>
+<figure class="card" data-c="portatiles" data-i="12"><img loading="lazy" src="./portatiles-139-t.webp" width="640" height="482" alt="Portátil gaming · pasta y pads"><figcaption>Portátil gaming · pasta y pads</figcaption></figure>
+<figure class="card" data-c="pc" data-i="13"><img loading="lazy" src="./pc-096-t.webp" width="544" height="640" alt="GPU · desmontaje completo"><figcaption>GPU · desmontaje completo</figcaption></figure>
+<figure class="card" data-c="pc" data-i="14"><img loading="lazy" src="./pc-100-t.webp" width="640" height="479" alt="Montaje PC · refrigeración líquida"><figcaption>Montaje PC · refrigeración líquida</figcaption></figure>
+<figure class="card" data-c="soldadura" data-i="15"><img loading="lazy" src="./soldadura-108-t.webp" width="640" height="442" alt="Soldadura · cable y jack"><figcaption>Soldadura · cable y jack</figcaption></figure>
+<figure class="card" data-c="soldadura" data-i="16"><img loading="lazy" src="./soldadura-128-t.webp" width="640" height="431" alt="Placa de monitor · reparación"><figcaption>Placa de monitor · reparación</figcaption></figure>
+<figure class="card" data-c="soldadura" data-i="17"><img loading="lazy" src="./soldadura-129-t.webp" width="640" height="480" alt="Montaje y soldadura de kit"><figcaption>Montaje y soldadura de kit</figcaption></figure>
+<figure class="card" data-c="soldadura" data-i="18"><img loading="lazy" src="./soldadura-140-t.webp" width="482" height="640" alt="Reballing · GPU portátil"><figcaption>Reballing · GPU portátil</figcaption></figure>
 </div></div></section>
 <section style="padding-top:0"><div class="wrap">
 <h2>Qué hago</h2><p class="sub"></p>
@@ -113,7 +113,7 @@ document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
 const lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),lbc=document.getElementById('lbc');
 let cur=0;
 const vis=()=>cards.filter(k=>!k.classList.contains('hide'));
-function show(i){cur=i;const it=items[i];lbi.src='img/'+it.f+'.webp';lbi.alt=it.title;lbc.textContent=it.title;lb.classList.add('on')}
+function show(i){cur=i;const it=items[i];lbi.src='./'+it.f+'.webp';lbi.alt=it.title;lbc.textContent=it.title;lb.classList.add('on')}
 function step(d){const v=vis().map(k=>+k.dataset.i);show(v[(v.indexOf(cur)+d+v.length)%v.length])}
 cards.forEach(k=>k.onclick=()=>show(+k.dataset.i));
 lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
